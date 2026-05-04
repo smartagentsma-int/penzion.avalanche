@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Rezervace – Penzion Avalanche | Špičák</title>
+  <meta name="description" content="Kontaktujte Penzion Avalanche. Telefon: +420 732 888 500. Odpovídáme do 24 hodin. Špičák 187, 340 04 Železná Ruda.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔</text></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-title">Avalanche</span>
+      <span class="nav__logo-sub">Penzion & Restaurace · Špičák</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav__desktop">
+      <ul class="nav__links">
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="ubytovani.html">Ubytování</a></li>
+        <li><a href="restaurace.html">Restaurace</a></li>
+        <li><a href="eshop.html">E-shop</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+      <div class="nav__lang"><a href="#" class="active" data-lang="cz">CZ</a><a href="#" data-lang="de">DE</a><a href="#" data-lang="fr">FR</a></div>
+      <a href="kontakt.html" class="btn nav__cta">Rezervovat</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Úvod</a>
+      <span class="breadcrumb__sep">›</span>
+      <span>Kontakt</span>
+    </nav>
+    <p class="page-hero__eyebrow">Penzion Avalanche</p>
+    <h1 class="page-hero__title">Kontakt & Rezervace</h1>
+    <p class="page-hero__text">Odpovídáme na dotazy do 24 hodin v pracovní dny. Pro urgentní rezervace volejte přímo.</p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:4rem">
+
+      <!-- FORM -->
+      <div class="fade-up">
+        <p class="label">Napište nám</p>
+        <h2 style="margin-bottom:1.5rem">Rezervační & kontaktní formulář</h2>
+
+        <form id="contactForm" novalidate>
+          <div class="grid-2" style="gap:1rem">
+            <div class="form-group">
+              <label class="form-label" for="jmeno">Jméno a příjmení <span class="required">*</span></label>
+              <input type="text" id="jmeno" name="jmeno" class="form-input" placeholder="Jan Novák" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jan@example.cz" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap:1rem">
+            <div class="form-group">
+              <label class="form-label" for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" class="form-input" placeholder="+420 000 000 000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="spolecnost">Společnost</label>
+              <input type="text" id="spolecnost" name="spolecnost" class="form-input" placeholder="Název firmy (volitelné)">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="typ_dotazu">Typ dotazu <span class="required">*</span></label>
+            <select id="typ_dotazu" name="typ_dotazu" class="form-select" required>
+              <option value="" disabled selected>Vyberte typ dotazu…</option>
+              <option value="rezervace">Rezervace ubytování</option>
+              <option value="restaurace">Dotaz na restauraci</option>
+              <option value="firemni">Firemní akce</option>
+              <option value="stiznost">Stížnost</option>
+              <option value="jine">Jiné</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="zprava">Zpráva <span class="required">*</span></label>
+            <textarea id="zprava" name="zprava" class="form-textarea" placeholder="Popište svůj dotaz nebo požadovaný termín pobytu…" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" name="souhlas_gdpr" required>
+              <span class="form-checkbox__label">
+                Souhlasím se zpracováním osobních údajů pro účely odpovědi na tento dotaz. *
+                <br><a href="pravni.html">Informace o zpracování osobních údajů dle GDPR.</a>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Odeslat dotaz</button>
+
+          <p style="font-size:0.78rem;color:#888;margin-top:0.75rem;margin-bottom:0">Povinné pole označeno *. Odpovídáme do 24 hodin v pracovní dny.</p>
+        </form>
+      </div>
+
+      <!-- CONTACT DETAILS + MAP -->
+      <div class="fade-up">
+        <div class="contact-block" style="margin-bottom:2rem">
+          <h3>Kontaktní údaje</h3>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">📞</span>
+            <div>
+              <div class="contact-row__label">Telefon</div>
+              <div class="contact-row__value">
+                <a href="tel:+420732888500">+420 732 888 500</a><br>
+                <a href="tel:+420773129191">+420 773 129 191</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">✉</span>
+            <div>
+              <div class="contact-row__label">E-mail – Ubytování</div>
+              <div class="contact-row__value"><a href="mailto:avalanche.penzion@email.cz">avalanche.penzion@email.cz</a></div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">✉</span>
+            <div>
+              <div class="contact-row__label">E-mail – Restaurace</div>
+              <div class="contact-row__value"><a href="mailto:avalanche.restaurace@email.cz">avalanche.restaurace@email.cz</a></div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">📍</span>
+            <div>
+              <div class="contact-row__label">Adresa</div>
+              <div class="contact-row__value">
+                Špičák 187<br>
+                340 04 Železná Ruda<br>
+                Česká republika
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">🕐</span>
+            <div>
+              <div class="contact-row__label">Otevírací doba restaurace</div>
+              <div class="contact-row__value">
+                Po–So: 11:00–21:00<br>
+                Ne: 11:00–19:00
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-row__icon">🏠</span>
+            <div>
+              <div class="contact-row__label">Check-in / Check-out</div>
+              <div class="contact-row__value">Check-in od 14:00 · Check-out do 10:00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESPONSE TIME -->
+        <div class="notice" style="margin-bottom:1.5rem">
+          ⏱ Odpovídáme do 24 hodin v pracovní dny. Pro urgentní rezervace volejte přímo na +420 732 888 500.
+        </div>
+
+        <!-- MAP EMBED -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.5!2d13.245!3d49.173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47095e2c0e7e5b4d%3A0x5d6c5a9e6f9b7d4c!2sSp%C3%AD%C4%8D%C3%A1k%20187%2C%20340%2004%20%C5%BDelez%CC%81n%C3%A1%20Ruda!5e0!3m2!1scs!2scz!4v1703000000000!5m2!1scs!2scz"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa – Penzion Avalanche, Špičák">
+          </iframe>
+        </div>
+        <p style="font-size:0.8rem;color:#888;margin-top:0.5rem;margin-bottom:0">100 m od lanovky Pancíř · 3 min. od vlakového nádraží Železná Ruda–Špičák</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <p class="label">Online rezervace</p>
+      <h2>Rezervujte přes partnerské portály</h2>
+    </div>
+    <div class="grid-3" style="max-width:700px;margin:0 auto">
+      <a href="https://www.booking.com/hotel/cz/penzion-avalanche.cs.html" target="_blank" rel="noopener"
+         class="feature-card fade-up text-center" style="text-decoration:none;">
+        <span class="feature-card__icon">🏨</span>
+        <div class="feature-card__title">Booking.com</div>
+        <p class="feature-card__text">Online rezervace s okamžitým potvrzením</p>
+      </a>
+      <a href="kontakt.html" class="feature-card fade-up text-center" style="text-decoration:none;">
+        <span class="feature-card__icon">📞</span>
+        <div class="feature-card__title">Telefonicky</div>
+        <p class="feature-card__text">+420 732 888 500 — přímá rezervace</p>
+      </a>
+      <a href="kontakt.html" class="feature-card fade-up text-center" style="text-decoration:none;">
+        <span class="feature-card__icon">✉</span>
+        <div class="feature-card__title">E-mailem</div>
+        <p class="feature-card__text">avalanche.penzion@email.cz</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-title">Penzion Avalanche</div>
+        <div class="footer__brand-sub">Špičák · Železná Ruda</div>
+        <p class="footer__brand-text">Ubytování a gastronomie v srdci Šumavy, 847 m n. m.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigace</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="ubytovani.html">Ubytování</a></li>
+          <li><a href="restaurace.html">Restaurace</a></li>
+          <li><a href="eshop.html">E-shop</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Kontakt</div>
+        <ul class="footer__links">
+          <li><a href="tel:+420732888500">+420 732 888 500</a></li>
+          <li><a href="tel:+420773129191">+420 773 129 191</a></li>
+          <li><a href="mailto:avalanche.penzion@email.cz">avalanche.penzion@email.cz</a></li>
+          <li><a href="mailto:avalanche.restaurace@email.cz">avalanche.restaurace@email.cz</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">IČ / DIČ</div>
+        <ul class="footer__links">
+          <li style="color:rgba(245,240,232,0.55);font-size:0.88rem">IČ: 14419793</li>
+          <li style="color:rgba(245,240,232,0.55);font-size:0.88rem">DIČ: CZ14419793</li>
+          <li style="margin-top:0.75rem"><a href="pravni.html">Právní dokumenty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="pravni.html">Ochrana osobních údajů</a>
+        <a href="pravni.html#cookies">Cookies</a>
+        <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a>
+        <a href="pravni.html#impressum">Impressum</a>
+      </div>
+      <p class="footer__copy">© 2024 Penzion Avalanche. Všechna práva vyhrazena.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="gdprBanner" class="gdpr-banner">
+  <p class="gdpr-banner__text">Tento web používá cookies. <a href="pravni.html#cookies">Více informací</a></p>
+  <div class="gdpr-banner__actions">
+    <button id="gdprReject" class="btn btn--ghost" style="padding:0.5rem 1rem;font-size:0.82rem">Odmítnout</button>
+    <button id="gdprAccept" class="btn btn--gold" style="padding:0.5rem 1rem;font-size:0.82rem">Přijmout vše</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

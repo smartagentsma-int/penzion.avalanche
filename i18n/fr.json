@@ -1,0 +1,158 @@
+{
+  "title": "Pension & Restaurant Avalanche – Železná Ruda | Špičák",
+  "description": "Hébergement et gastronomie au cœur de la forêt de Bohême. Chambres de 2 à 4 personnes, restaurant de cuisine tchèque traditionnelle, parking privatif. À 100 m du télésiège Pancíř.",
+  "nav": {
+    "logoTitle": "Avalanche",
+    "logoSub": "Pension & Restaurant · Špičák",
+    "home": "Accueil",
+    "accommodation": "Hébergement",
+    "restaurant": "Restaurant",
+    "eshop": "Boutique",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "hero": {
+    "eyebrow": "Železná Ruda – Špičák · 847 m d'altitude",
+    "title": "Hébergement et gastronomie<br>au cœur de la forêt de Bohême",
+    "subtitle": "Pension familiale avec restaurant au centre du village de Špičák. Accès direct aux sentiers de randonnée, aux domaines skiables et à la nature préservée de la forêt de Bohême.",
+    "badges": {
+      "rating": "⭐ 4,5/5 · 937 avis",
+      "parking": "🅿 Parking gratuit",
+      "wifi": "📶 Wi-Fi gratuit",
+      "breakfast": "🥐 Petit-déjeuner inclus",
+      "accessible": "♿ Accès handicapés"
+    },
+    "bookAccommodation": "Réserver un hébergement",
+    "viewRestaurant": "Découvrir le restaurant",
+    "more": "En savoir plus"
+  },
+  "trust": {
+    "cableCar": "À 100 m du télésiège Pancíř",
+    "train": "À 3 min. de la gare",
+    "bus": "Arrêt de bus à 100 m",
+    "googleRating": "4,5 / 5 · Avis Google",
+    "familyPension": "Pension familiale"
+  },
+  "features": {
+    "title": "Nos prestations",
+    "subtitle": "Tout pour un séjour réussi",
+    "description": "La pension Avalanche vous propose tout ce dont vous avez besoin pour vos vacances — d'un hébergement confortable à la cuisine traditionnelle tchèque.",
+    "accommodation": {
+      "title": "Hébergement",
+      "text": "Chambres de 2, 3 et 4 personnes avec salle de bain privative, Wi-Fi et télévision."
+    },
+    "restaurant": {
+      "title": "Restaurant",
+      "text": "Cuisine tchèque traditionnelle, cheminée, terrasse d'été. Lun–Sam 11h–21h."
+    },
+    "location": {
+      "title": "Situation",
+      "text": "Centre de Špičák, 847 m d'altitude. À proximité du télésiège, des pistes de ski et de la nature."
+    },
+    "parking": {
+      "title": "Parking",
+      "text": "Parking privatif directement devant la pension, gratuit pour les clients."
+    }
+  },
+  "rooms": {
+    "title": "Hébergement",
+    "subtitle": "Des chambres adaptées à chaque besoin",
+    "description": "Toutes les chambres disposent d'une salle de bain privative avec WC, du Wi-Fi et d'une télévision. Le petit-déjeuner est inclus dans le prix du séjour.",
+    "double": {
+      "type": "Pour les couples",
+      "title": "Chambre double",
+      "features": [
+        "Salle de bain et WC privatifs",
+        "Wi-Fi gratuit",
+        "Télévision",
+        "Petit-déjeuner inclus"
+      ],
+      "more": "Plus d'informations"
+    },
+    "triple": {
+      "type": "Pour les familles",
+      "title": "Chambre triple",
+      "features": [
+        "Salle de bain et WC privatifs",
+        "Wi-Fi gratuit",
+        "Télévision",
+        "Petit-déjeuner inclus"
+      ],
+      "more": "Plus d'informations"
+    },
+    "quad": {
+      "type": "Pour les groupes",
+      "title": "Chambre quadruple",
+      "features": [
+        "Salle de bain et WC privatifs",
+        "Wi-Fi gratuit",
+        "Télévision",
+        "Consigne à skis et à vélos"
+      ],
+      "more": "Plus d'informations"
+    }
+  },
+  "process": {
+    "title": "Comment ça marche",
+    "subtitle": "Une réservation en trois étapes",
+    "step1": {
+      "title": "Réservation",
+      "text": "Via le formulaire en ligne ou par téléphone au +420 732 888 500"
+    },
+    "step2": {
+      "title": "Confirmation",
+      "text": "Réponse par e-mail sous 24 heures, acompte de 50 %"
+    },
+    "step3": {
+      "title": "Arrivée",
+      "text": "Check-in à partir de 14h00 · Check-out avant 10h00"
+    }
+  },
+  "restaurantPreview": {
+    "label": "Restaurant Avalanche",
+    "title": "Cuisine tchèque traditionnelle",
+    "description": "Restaurant avec cheminée, intérieur en bois et terrasse d'été. Nous vous proposons des plats tchèques traditionnels préparés à partir de produits frais — jarret de porc rôti, fromage frit accompagné de sauce tartare maison et d'autres spécialités incontournables.",
+    "hours": "Lun–Sam : 11h00–21h00 &nbsp;·&nbsp; Dim : 11h00–19h00",
+    "menu": "Voir la carte"
+  },
+  "stats": {
+    "reviews": "Avis Google",
+    "rating": "Note moyenne",
+    "altitude": "m d'altitude",
+    "distance": "m du télésiège"
+  },
+  "cta": {
+    "label": "Réservation",
+    "title": "Vous prévoyez un séjour en forêt de Bohême ?",
+    "description": "Contactez-nous par téléphone ou via le formulaire en ligne. Nous vous répondrons sous 24 heures.",
+    "book": "Réserver un hébergement"
+  },
+  "footer": {
+    "brandTitle": "Pension Avalanche",
+    "brandSub": "Špičák · Železná Ruda",
+    "brandText": "Hébergement et gastronomie au cœur de la forêt de Bohême, à 847 m d'altitude.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "openingHours": "Horaires d'ouverture",
+    "restaurantHours": "Restaurant :",
+    "ic": "IČ : 14419793",
+    "dic": "DIČ : CZ14419793",
+    "legal": {
+      "privacy": "Protection des données",
+      "cookies": "Cookies",
+      "terms": "Conditions générales",
+      "impressum": "Mentions légales"
+    },
+    "copyright": "© 2024 Pension Avalanche. Tous droits réservés."
+  },
+  "gdpr": {
+    "text": "Ce site utilise des cookies pour assurer son bon fonctionnement et réaliser des analyses anonymes.",
+    "more": "En savoir plus sur les cookies",
+    "reject": "Refuser",
+    "accept": "Tout accepter"
+  },
+  "accommodation": {
+    "title": "Hébergement – Pension Avalanche | Špičák, Železná Ruda",
+    "description": "Chambres de 2, 3 et 4 personnes avec salle de bain privative, Wi-Fi et petit-déjeuner. Annulation gratuite jusqu'à 7 jours avant l'arrivée. Pension Avalanche, Špičák, 847 m d'altitude."
+  }
+}

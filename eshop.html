@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-shop – Dárkové poukazy | Penzion Avalanche</title>
+  <meta name="description" content="Dárkové poukazy na ubytování a gastronomii v Penzionu Avalanche. Platnost 12 měsíců. Elektronické i fyzické poukazy.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔</text></svg>">
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.2rem;
+      border-radius: 100px;
+      border: 1.5px solid var(--stone);
+      background: white;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-btn.active,
+    .filter-btn:hover {
+      border-color: var(--forest);
+      background: var(--forest);
+      color: var(--cream);
+    }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(26,46,31,0.55);
+      backdrop-filter: blur(4px);
+      z-index: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .modal {
+      background: white;
+      border-radius: var(--radius);
+      max-width: 600px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+    }
+    .modal-overlay.open .modal { transform: translateY(0); }
+    .modal__close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: #888;
+      transition: color var(--transition);
+    }
+    .modal__close:hover { color: var(--forest); }
+    .param-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+    .param-table td {
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--cream);
+    }
+    .param-table td:first-child { color: #888; width: 45%; }
+    .param-table td:last-child { font-weight: 500; color: var(--forest); }
+    .param-table tr:last-child td { border-bottom: none; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-title">Avalanche</span>
+      <span class="nav__logo-sub">Penzion & Restaurace · Špičák</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav__desktop">
+      <ul class="nav__links">
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="ubytovani.html">Ubytování</a></li>
+        <li><a href="restaurace.html">Restaurace</a></li>
+        <li><a href="eshop.html" class="active">E-shop</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+      <div class="nav__lang"><a href="#" class="active" data-lang="cz">CZ</a><a href="#" data-lang="de">DE</a><a href="#" data-lang="fr">FR</a></div>
+      <a href="kontakt.html" class="btn nav__cta">Rezervovat</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Úvod</a>
+      <span class="breadcrumb__sep">›</span>
+      <span>E-shop</span>
+    </nav>
+    <p class="page-hero__eyebrow">Penzion Avalanche</p>
+    <h1 class="page-hero__title">Dárkové poukazy & E-shop</h1>
+    <p class="page-hero__text">Darujte zážitek z Šumavy. Platnost 12 měsíců, elektronické i fyzické poukazy.</p>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar__inner">
+    <div class="trust-item"><span class="trust-item__icon">🔒</span><span>Zabezpečená platba SSL</span></div>
+    <div class="trust-item"><span class="trust-item__icon">↩</span><span>Vrácení do 14 dní</span></div>
+    <div class="trust-item"><span class="trust-item__icon">📧</span><span>Doručení e-mailem do 24 h</span></div>
+    <div class="trust-item"><span class="trust-item__icon">💳</span><span>Kartou nebo převodem</span></div>
+  </div>
+</div>
+
+<!-- SHOP -->
+<section class="section">
+  <div class="container">
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">Vše</button>
+      <button class="filter-btn" onclick="filterProducts('ubytovani', this)">Ubytování</button>
+      <button class="filter-btn" onclick="filterProducts('gastronomie', this)">Gastronomie</button>
+      <button class="filter-btn" onclick="filterProducts('merchandise', this)">Merchandise</button>
+    </div>
+
+    <div class="grid-3" id="productGrid">
+
+      <!-- PRODUCT 1: Poukaz ubytování -->
+      <div class="product-card fade-up" data-category="ubytovani">
+        <div class="product-card__img">🛏</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Dárkový poukaz</p>
+          <h3 class="product-card__name">Poukaz na ubytování</h3>
+          <p class="product-card__desc">Poukaz na pobyt v Penzionu Avalanche. Platnost 12 měsíců, libovolný termín dle dostupnosti.</p>
+          <div class="product-card__price">2 000 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Skladem</p>
+          <div style="display:flex;gap:0.75rem">
+            <button class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="openModal('ubytovani')">Detail</button>
+            <button class="btn btn--primary" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="addToCart(this)">Do košíku</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2: Poukaz gastronomie -->
+      <div class="product-card fade-up" data-category="gastronomie">
+        <div class="product-card__img" style="background:linear-gradient(135deg,var(--moss),var(--sage))">🍽</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Dárkový poukaz</p>
+          <h3 class="product-card__name">Poukaz na gastronomii</h3>
+          <p class="product-card__desc">Poukaz do Restaurace Avalanche. Tradiční česká kuchyně, platnost 12 měsíců.</p>
+          <div class="product-card__price">1 000 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Skladem</p>
+          <div style="display:flex;gap:0.75rem">
+            <button class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="openModal('gastronomie')">Detail</button>
+            <button class="btn btn--primary" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="addToCart(this)">Do košíku</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 3: Tričko -->
+      <div class="product-card fade-up" data-category="merchandise">
+        <div class="product-card__img" style="background:linear-gradient(135deg,var(--charcoal),#555)">👕</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Merchandise</p>
+          <h3 class="product-card__name">Tričko Avalanche</h3>
+          <p class="product-card__desc">Tričko s logem Penzionu Avalanche. Dostupné ve velikostech S–XXL.</p>
+          <div class="product-card__price">490 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Skladem</p>
+          <div style="display:flex;gap:0.75rem">
+            <button class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="openModal('tricko')">Detail</button>
+            <button class="btn btn--primary" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="addToCart(this)">Do košíku</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 4: Hrnek -->
+      <div class="product-card fade-up" data-category="merchandise">
+        <div class="product-card__img" style="background:linear-gradient(135deg,var(--gold),var(--gold-light))">☕</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Merchandise</p>
+          <h3 class="product-card__name">Hrnek Avalanche</h3>
+          <p class="product-card__desc">Keramický hrnek s logem Penzionu Avalanche. Ideální pro horké nápoje.</p>
+          <div class="product-card__price">290 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Skladem</p>
+          <div style="display:flex;gap:0.75rem">
+            <button class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="openModal('hrnek')">Detail</button>
+            <button class="btn btn--primary" style="flex:1;justify-content:center;padding:0.65rem 1rem;" onclick="addToCart(this)">Do košíku</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 5: Vánoční balíček -->
+      <div class="product-card fade-up" data-category="ubytovani">
+        <div class="product-card__img" style="background:linear-gradient(135deg,#8b3a2a,#c45c42)">🎄</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Sezónní nabídka</p>
+          <h3 class="product-card__name">Vánoční pobytový balíček</h3>
+          <p class="product-card__desc">Dvě noci pro 2 osoby, snídaně, vánoční večeře v restauraci. Platnost: prosinec.</p>
+          <div class="product-card__price">5 800 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Na dotaz</p>
+          <div style="display:flex;gap:0.75rem">
+            <a href="kontakt.html" class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;">Poptávka</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 6: Letní pobyt -->
+      <div class="product-card fade-up" data-category="ubytovani">
+        <div class="product-card__img" style="background:linear-gradient(135deg,#2d7a4f,#5ab87a)">🌿</div>
+        <div class="product-card__body">
+          <p class="room-card__type">Sezónní nabídka</p>
+          <h3 class="product-card__name">Letní pobytový balíček</h3>
+          <p class="product-card__desc">Tři noci pro rodinu, snídaně denně. Ideální pro turistiku a cyklistiku.</p>
+          <div class="product-card__price">7 200 Kč</div>
+          <p class="product-card__vat">vč. DPH 21 % · Na dotaz</p>
+          <div style="display:flex;gap:0.75rem">
+            <a href="kontakt.html" class="btn btn--outline" style="flex:1;justify-content:center;padding:0.65rem 1rem;">Poptávka</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GDPR notice -->
+    <div class="notice" style="margin-top:2.5rem">
+      🔒 Při nákupu zpracováváme osobní údaje výhradně pro účely dodání zboží. Cookies pro analytické účely — nastavení v <a href="pravni.html#cookies">preferencích cookies</a>.
+    </div>
+  </div>
+</section>
+
+<!-- MODAL: Poukaz ubytování -->
+<div id="modal-ubytovani" class="modal-overlay" onclick="closeModalOutside(event, 'ubytovani')">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal('ubytovani')">✕</button>
+    <p class="label">Dárkový poukaz</p>
+    <h2 style="margin-bottom:1rem">Poukaz na pobyt v Penzionu Avalanche</h2>
+    <table class="param-table">
+      <tr><td>Hodnota</td><td>2 000 Kč</td></tr>
+      <tr><td>Platnost</td><td>12 měsíců od zakoupení</td></tr>
+      <tr><td>Formát</td><td>Elektronický PDF / Fyzický poukaz</td></tr>
+      <tr><td>Doprava (el.)</td><td>E-mail – zdarma, do 24 h</td></tr>
+      <tr><td>Doprava (fyz.)</td><td>Česká pošta +50 Kč, 3–5 prac. dní</td></tr>
+      <tr><td>DPH</td><td>21 % (zahrnuto v ceně)</td></tr>
+      <tr><td>Dostupnost</td><td>Skladem</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#5a5a5a;margin-bottom:1.5rem">Poukaz lze využít na ubytování v libovolném termínu dle dostupnosti. Rezervaci je nutno domluvit předem telefonicky nebo e-mailem. Vrácení možné do 14 dní, poukaz nesmí být použit.</p>
+    <div class="notice" style="margin-bottom:1.5rem">Zabezpečená platba · Ochrana spotřebitele · <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a></div>
+    <button class="btn btn--primary" style="width:100%;justify-content:center" onclick="addToCart(this)">Vložit do košíku – 2 000 Kč</button>
+  </div>
+</div>
+
+<!-- MODAL: Poukaz gastronomie -->
+<div id="modal-gastronomie" class="modal-overlay" onclick="closeModalOutside(event, 'gastronomie')">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal('gastronomie')">✕</button>
+    <p class="label">Dárkový poukaz</p>
+    <h2 style="margin-bottom:1rem">Poukaz do Restaurace Avalanche</h2>
+    <table class="param-table">
+      <tr><td>Hodnota</td><td>1 000 Kč</td></tr>
+      <tr><td>Platnost</td><td>12 měsíců od zakoupení</td></tr>
+      <tr><td>Formát</td><td>Elektronický PDF / Fyzický poukaz</td></tr>
+      <tr><td>Doprava (el.)</td><td>E-mail – zdarma, do 24 h</td></tr>
+      <tr><td>Doprava (fyz.)</td><td>Česká pošta +50 Kč, 3–5 prac. dní</td></tr>
+      <tr><td>DPH</td><td>21 % (zahrnuto v ceně)</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#5a5a5a;margin-bottom:1.5rem">Poukaz lze využít při návštěvě restaurace. Vrácení možné do 14 dní, poukaz nesmí být použit.</p>
+    <div class="notice" style="margin-bottom:1.5rem">Zabezpečená platba · <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a></div>
+    <button class="btn btn--primary" style="width:100%;justify-content:center" onclick="addToCart(this)">Vložit do košíku – 1 000 Kč</button>
+  </div>
+</div>
+
+<!-- MODAL: Tričko -->
+<div id="modal-tricko" class="modal-overlay" onclick="closeModalOutside(event, 'tricko')">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal('tricko')">✕</button>
+    <p class="label">Merchandise</p>
+    <h2 style="margin-bottom:1rem">Tričko Avalanche</h2>
+    <table class="param-table">
+      <tr><td>Cena</td><td>490 Kč</td></tr>
+      <tr><td>Velikosti</td><td>S, M, L, XL, XXL</td></tr>
+      <tr><td>Materiál</td><td>100% bavlna</td></tr>
+      <tr><td>Doprava</td><td>Česká pošta +80 Kč</td></tr>
+      <tr><td>DPH</td><td>21 % (zahrnuto v ceně)</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#5a5a5a;margin-bottom:1.5rem">Tričko s logem Penzionu Avalanche. Vrácení do 14 dní bez udání důvodu.</p>
+    <div class="notice" style="margin-bottom:1.5rem">Zabezpečená platba · <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a></div>
+    <button class="btn btn--primary" style="width:100%;justify-content:center" onclick="addToCart(this)">Vložit do košíku – 490 Kč</button>
+  </div>
+</div>
+
+<!-- MODAL: Hrnek -->
+<div id="modal-hrnek" class="modal-overlay" onclick="closeModalOutside(event, 'hrnek')">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal('hrnek')">✕</button>
+    <p class="label">Merchandise</p>
+    <h2 style="margin-bottom:1rem">Hrnek Avalanche</h2>
+    <table class="param-table">
+      <tr><td>Cena</td><td>290 Kč</td></tr>
+      <tr><td>Objem</td><td>300 ml</td></tr>
+      <tr><td>Materiál</td><td>Keramika</td></tr>
+      <tr><td>Doprava</td><td>Česká pošta +80 Kč</td></tr>
+      <tr><td>DPH</td><td>21 % (zahrnuto v ceně)</td></tr>
+    </table>
+    <p style="font-size:0.88rem;color:#5a5a5a;margin-bottom:1.5rem">Keramický hrnek s logem. Vhodný do myčky. Vrácení do 14 dní.</p>
+    <div class="notice" style="margin-bottom:1.5rem">Zabezpečená platba · <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a></div>
+    <button class="btn btn--primary" style="width:100%;justify-content:center" onclick="addToCart(this)">Vložit do košíku – 290 Kč</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-title">Penzion Avalanche</div>
+        <div class="footer__brand-sub">Špičák · Železná Ruda</div>
+        <p class="footer__brand-text">Ubytování a gastronomie v srdci Šumavy, 847 m n. m.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigace</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Úvod</a></li>
+          <li><a href="ubytovani.html">Ubytování</a></li>
+          <li><a href="restaurace.html">Restaurace</a></li>
+          <li><a href="eshop.html">E-shop</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Kontakt</div>
+        <ul class="footer__links">
+          <li><a href="tel:+420732888500">+420 732 888 500</a></li>
+          <li><a href="mailto:avalanche.penzion@email.cz">avalanche.penzion@email.cz</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Právní</div>
+        <ul class="footer__links">
+          <li><a href="pravni.html">Ochrana osobních údajů</a></li>
+          <li><a href="pravni.html#cookies">Cookies</a></li>
+          <li><a href="pravni.html#obchodni-podminky">Obchodní podmínky</a></li>
+          <li><a href="pravni.html#impressum">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="pravni.html">Ochrana osobních údajů</a>
+        <a href="pravni.html#cookies">Cookies</a>
+        <a href="pravni.html#obchodni-podminky">Obchodní podmínky</a>
+      </div>
+      <p class="footer__copy">© 2024 Penzion Avalanche. Všechna práva vyhrazena.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="gdprBanner" class="gdpr-banner">
+  <p class="gdpr-banner__text">Tento web používá cookies. <a href="pravni.html#cookies">Více informací</a></p>
+  <div class="gdpr-banner__actions">
+    <button id="gdprReject" class="btn btn--ghost" style="padding:0.5rem 1rem;font-size:0.82rem">Odmítnout</button>
+    <button id="gdprAccept" class="btn btn--gold" style="padding:0.5rem 1rem;font-size:0.82rem">Přijmout vše</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#productGrid .product-card').forEach(card => {
+    if (cat === 'all' || card.dataset.category === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function openModal(id) {
+  document.getElementById('modal-' + id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(id) {
+  document.getElementById('modal-' + id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOutside(event, id) {
+  if (event.target.classList.contains('modal-overlay')) closeModal(id);
+}
+
+function addToCart(btn) {
+  const orig = btn.textContent;
+  btn.textContent = '✓ Přidáno do košíku';
+  btn.style.background = 'var(--moss)';
+  setTimeout(() => {
+    btn.textContent = orig;
+    btn.style.background = '';
+  }, 2500);
+}
+</script>
+</body>
+</html>

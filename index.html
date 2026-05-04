@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="cs" data-lang="cz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title">Penzion & Restaurace Avalanche – Železná Ruda | Špičák</title>
+  <meta name="description" data-i18n="description" content="Ubytování a gastronomie v srdci Šumavy. 2–4-lůžkové pokoje, restaurace s českou kuchyní, vlastní parkoviště. 100 m od lanovky Pancíř.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔</text></svg>">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-title" data-i18n="nav.logoTitle">Avalanche</span>
+      <span class="nav__logo-sub" data-i18n="nav.logoSub">Penzion & Restaurace · Špičák</span>
+    </a>
+
+    <button class="nav__toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav__desktop">
+      <ul class="nav__links">
+        <li><a href="index.html" class="active" data-i18n="nav.home">Úvod</a></li>
+        <li><a href="ubytovani.html" data-i18n="nav.accommodation">Ubytování</a></li>
+        <li><a href="restaurace.html" data-i18n="nav.restaurant">Restaurace</a></li>
+        <li><a href="eshop.html" data-i18n="nav.eshop">E-shop</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="nav__lang">
+        <a href="#" class="active" data-lang="cz">CZ</a>
+        <a href="#" data-lang="de">DE</a>
+        <a href="#" data-lang="fr">FR</a>
+      </div>
+      <a href="kontakt.html" class="btn nav__cta" data-i18n="nav.book">Rezervovat</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero__bg">
+    <div class="hero__bg-image hero__bg-image--1" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/77691623.jpg?k=5dd5ed8a8f302f1cd40087c4e4e227fcca94a37899ee6d89b0ed78586c5cda4f&o=');"></div>
+    <div class="hero__bg-image hero__bg-image--2" style="background-image: url('https://webmium.blob.core.windows.net/users/106772/assets/63ede459714e62ded3b6901e22beb57e/avalanchepokoje.jpg');"></div>
+    <div class="hero__bg-image hero__bg-image--3" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/77691614.jpg?k=41e7bc4f5aca5eedf33f5126a495e9271ca9b27b3f07f2f4b0a00c7f7473566c&o=');"></div>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Železná Ruda – Špičák · 847 m n. m.</p>
+      <h1 class="hero__title" data-i18n="hero.title">Ubytování a gastronomie<br>v srdci Šumavy</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Rodinný penzion s restaurací v centru obce Špičák. Přímý přístup k turistickým trasám, lyžařským areálům a přírodě Šumavy.</p>
+      <div class="hero__badges">
+        <span class="badge" data-i18n="hero.badges.rating">⭐ 4,5/5 · 937 recenzí</span>
+        <span class="badge" data-i18n="hero.badges.parking">🅿 Parkování zdarma</span>
+        <span class="badge" data-i18n="hero.badges.wifi">📶 Wi-Fi zdarma</span>
+        <span class="badge" data-i18n="hero.badges.breakfast">🥐 Snídaně v ceně</span>
+        <span class="badge" data-i18n="hero.badges.accessible">♿ Bezbariérový přístup</span>
+      </div>
+      <div class="hero__actions">
+        <a href="kontakt.html" class="btn btn--gold" data-i18n="hero.bookAccommodation">Rezervovat ubytování</a>
+        <a href="restaurace.html" class="btn btn--ghost" data-i18n="hero.viewRestaurant">Prohlédnout restauraci</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span data-i18n="hero.more">Více</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════════ -->
+<div class="trust-bar">
+  <div class="trust-bar__inner">
+    <div class="trust-item">
+      <span class="trust-item__icon">🏔</span>
+      <span data-i18n="trust.cableCar">100 m od lanovky Pancíř</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-item__icon">🚆</span>
+      <span data-i18n="trust.train">3 min. od vlakového nádraží</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-item__icon">🚌</span>
+      <span data-i18n="trust.bus">Autobus 100 m</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-item__icon">⭐</span>
+      <span data-i18n="trust.googleRating">4,5 / 5 · Google Recenze</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-item__icon">🏠</span>
+      <span data-i18n="trust.familyPension">Rodinný penzion</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FEATURES GRID
+═══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <p class="label" data-i18n="features.title">Co nabízíme</p>
+      <h2 data-i18n="features.subtitle">Vše pro příjemný pobyt</h2>
+      <p data-i18n="features.description">Penzion Avalanche poskytuje kompletní zázemí pro vaši dovolenou — od pohodlného ubytování po tradiční českou kuchyni.</p>
+    </div>
+    <div class="grid-4">
+      <div class="feature-card fade-up">
+        <span class="feature-card__icon">🛏</span>
+        <div class="feature-card__title" data-i18n="features.accommodation.title">Ubytování</div>
+        <p class="feature-card__text" data-i18n="features.accommodation.text">2-, 3- a 4-lůžkové pokoje s vlastní koupelnou, Wi-Fi a televizí.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <span class="feature-card__icon">🍽</span>
+        <div class="feature-card__title" data-i18n="features.restaurant.title">Restaurace</div>
+        <p class="feature-card__text" data-i18n="features.restaurant.text">Tradiční česká kuchyně, krbová kamna, letní terasa. Po–So 11–21 h.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <span class="feature-card__icon">📍</span>
+        <div class="feature-card__title" data-i18n="features.location.title">Lokalita</div>
+        <p class="feature-card__text" data-i18n="features.location.text">Centrum Špičák, 847 m n. m. Blízko lanovky, lyžařských tras i přírody.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <span class="feature-card__icon">🅿</span>
+        <div class="feature-card__title" data-i18n="features.parking.title">Parkování</div>
+        <p class="feature-card__text" data-i18n="features.parking.text">Vlastní parkoviště přímo u penzionu, bezplatné pro hosty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ROOMS PREVIEW
+═══════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="label" data-i18n="rooms.title">Ubytování</p>
+      <h2 data-i18n="rooms.subtitle">Pokoje pro každou potřebu</h2>
+      <p data-i18n="rooms.description">Všechny pokoje mají vlastní sociální zařízení, Wi-Fi připojení a televizi. Snídaně je zahrnuta v ceně pobytu.</p>
+    </div>
+    <div class="grid-3">
+      <div class="room-card fade-up">
+        <div class="room-card__img">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/332799015.jpg?k=064e2b1853e31ebb43c4af04fd965e90e6022d7226a68a00708a3d74ee3b4ec2&o=" alt="Dvoulůžkový pokoj" loading="lazy">
+        </div>
+        <div class="room-card__body">
+          <p class="room-card__type" data-i18n="rooms.double.type">Pro páry</p>
+          <h3 class="room-card__title" data-i18n="rooms.double.title">Dvoulůžkový pokoj</h3>
+          <ul class="room-card__features">
+            <li data-i18n="rooms.double.features.0">Vlastní koupelna a WC</li>
+            <li data-i18n="rooms.double.features.1">Wi-Fi zdarma</li>
+            <li data-i18n="rooms.double.features.2">Televize</li>
+            <li data-i18n="rooms.double.features.3">Snídaně v ceně</li>
+          </ul>
+          <a href="ubytovani.html" class="btn btn--outline" style="width:100%;justify-content:center" data-i18n="rooms.double.more">Více informací</a>
+        </div>
+      </div>
+      <div class="room-card fade-up">
+        <div class="room-card__img" style="background: var(--sage);">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/410434060.jpg?k=797b103f86f90b6e38c7b49592838b1d1d3ec9c75070f1a729b29722ade4dc41&o=" alt="Třílůžkový pokoj" loading="lazy">
+        </div>
+        <div class="room-card__body">
+          <p class="room-card__type" data-i18n="rooms.triple.type">Pro rodiny</p>
+          <h3 class="room-card__title" data-i18n="rooms.triple.title">Třílůžkový pokoj</h3>
+          <ul class="room-card__features">
+            <li data-i18n="rooms.triple.features.0">Vlastní koupelna a WC</li>
+            <li data-i18n="rooms.triple.features.1">Wi-Fi zdarma</li>
+            <li data-i18n="rooms.triple.features.2">Televize</li>
+            <li data-i18n="rooms.triple.features.3">Snídaně v ceně</li>
+          </ul>
+          <a href="ubytovani.html" class="btn btn--outline" style="width:100%;justify-content:center" data-i18n="rooms.triple.more">Více informací</a>
+        </div>
+      </div>
+      <div class="room-card fade-up">
+        <div class="room-card__img">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/414520950.jpg?k=eebf720e472da131a62ebb70887c1cd1317898778e2c86b007dfbfe6e4f861cc&o=" alt="Čtyřlůžkový pokoj" loading="lazy">
+        </div>
+        <div class="room-card__body">
+          <p class="room-card__type" data-i18n="rooms.quad.type">Pro skupiny</p>
+          <h3 class="room-card__title" data-i18n="rooms.quad.title">Čtyřlůžkový pokoj</h3>
+          <ul class="room-card__features">
+            <li data-i18n="rooms.quad.features.0">Vlastní koupelna a WC</li>
+            <li data-i18n="rooms.quad.features.1">Wi-Fi zdarma</li>
+            <li data-i18n="rooms.quad.features.2">Televize</li>
+            <li data-i18n="rooms.quad.features.3">Úschovna lyží a kol</li>
+          </ul>
+          <a href="ubytovani.html" class="btn btn--outline" style="width:100%;justify-content:center" data-i18n="rooms.quad.more">Více informací</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROCESS
+═══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header section-header--center fade-up">
+      <p class="label" data-i18n="process.title">Jak to funguje</p>
+      <h2 data-i18n="process.subtitle">Rezervace ve třech krocích</h2>
+    </div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step__number">1</div>
+        <div class="step__title" data-i18n="process.step1.title">Rezervace</div>
+        <p class="step__text" data-i18n="process.step1.text">Online formulář nebo telefonicky na +420 732 888 500</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step__number">2</div>
+        <div class="step__title" data-i18n="process.step2.title">Potvrzení</div>
+        <p class="step__text" data-i18n="process.step2.text">E-mailová odpověď do 24 hodin, záloha 50 %</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step__number">3</div>
+        <div class="step__title" data-i18n="process.step3.title">Příjezd</div>
+        <p class="step__text" data-i18n="process.step3.text">Check-in od 14:00 · Check-out do 10:00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RESTAURANT PREVIEW
+═══════════════════════════════════════════ -->
+<section class="section section--dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="fade-up">
+        <p class="label" style="color:var(--gold-light)" data-i18n="restaurantPreview.label">Restaurace Avalanche</p>
+        <h2 style="color:var(--warm-white);margin-bottom:1rem" data-i18n="restaurantPreview.title">Tradiční česká kuchyně</h2>
+        <p style="color:rgba(245,240,232,0.8);margin-bottom:1.5rem" data-i18n="restaurantPreview.description">Restaurace s krbovými kamny, dřevěným interiérem a letní terasou. Nabízíme tradiční česká jídla z čerstvých surovin — pečené vepřové koleno, smažený sýr s domácí tatarkou a další oblíbené pokrmy.</p>
+        <p style="color:rgba(245,240,232,0.65);font-size:0.88rem;margin-bottom:2rem" data-i18n="restaurantPreview.hours">Po–So: 11:00–21:00 &nbsp;·&nbsp; Ne: 11:00–19:00</p>
+        <a href="restaurace.html" class="btn btn--gold" data-i18n="restaurantPreview.menu">Zobrazit nabídku</a>
+      </div>
+      <div class="fade-up">
+        <img src="https://webmium.blob.core.windows.net/users/106772/assets/21c833e2f4f0722c6f7a22ec7ff22156/avalancherestaurace.jpg"
+             alt="Restaurace Avalanche"
+             style="border-radius:var(--radius);width:100%;height:380px;object-fit:cover;box-shadow:var(--shadow-lg);"
+             loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STATS
+═══════════════════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid-4 text-center">
+      <div class="fade-up">
+        <div class="highlight-number">937<span style="font-size:1.5rem;color:var(--moss)">+</span></div>
+        <p class="label mt-1" data-i18n="stats.reviews">Google recenzí</p>
+      </div>
+      <div class="fade-up">
+        <div class="highlight-number">4,5</div>
+        <div class="stars mt-1">★★★★½</div>
+        <p class="label mt-1" data-i18n="stats.rating">Průměrné hodnocení</p>
+      </div>
+      <div class="fade-up">
+        <div class="highlight-number">847</div>
+        <p class="label mt-1" data-i18n="stats.altitude">m n. m.</p>
+      </div>
+      <div class="fade-up">
+        <div class="highlight-number">100</div>
+        <p class="label mt-1" data-i18n="stats.distance">m od lanovky</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CTA SECTION
+═══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container text-center">
+    <div class="fade-up" style="max-width:580px;margin:0 auto">
+      <p class="label" data-i18n="cta.label">Rezervace</p>
+      <h2 data-i18n="cta.title">Plánujete pobyt na Šumavě?</h2>
+      <p style="color:#5a5a5a;margin:1rem auto 2rem" data-i18n="cta.description">Kontaktujte nás telefonicky nebo přes online formulář. Odpovíme do 24 hodin.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="kontakt.html" class="btn btn--primary" data-i18n="cta.book">Rezervovat ubytování</a>
+        <a href="tel:+420732888500" class="btn btn--outline">+420 732 888 500</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-title" data-i18n="footer.brandTitle">Penzion Avalanche</div>
+        <div class="footer__brand-sub" data-i18n="footer.brandSub">Špičák · Železná Ruda</div>
+        <p class="footer__brand-text" data-i18n="footer.brandText">Ubytování a gastronomie v srdci Šumavy, 847 m n. m.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="https://www.booking.com/hotel/cz/penzion-avalanche.cs.html" aria-label="Booking">B</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title" data-i18n="footer.navigation">Navigace</div>
+        <ul class="footer__links">
+          <li><a href="index.html" data-i18n="nav.home">Úvod</a></li>
+          <li><a href="ubytovani.html" data-i18n="nav.accommodation">Ubytování</a></li>
+          <li><a href="restaurace.html" data-i18n="nav.restaurant">Restaurace</a></li>
+          <li><a href="eshop.html" data-i18n="nav.eshop">E-shop</a></li>
+          <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title" data-i18n="footer.contact">Kontakt</div>
+        <ul class="footer__links">
+          <li><a href="tel:+420732888500">+420 732 888 500</a></li>
+          <li><a href="tel:+420773129191">+420 773 129 191</a></li>
+          <li><a href="mailto:avalanche.penzion@email.cz">avalanche.penzion@email.cz</a></li>
+          <li style="color:rgba(245,240,232,0.5);font-size:0.88rem;margin-top:0.5rem">Špičák 187<br>340 04 Železná Ruda<br>Česká republika</li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title" data-i18n="footer.openingHours">Otevírací doba</div>
+        <ul class="footer__links">
+          <li style="color:rgba(245,240,232,0.7);font-size:0.88rem" data-i18n="footer.restaurantHours">Restaurace:</li>
+          <li style="color:rgba(245,240,232,0.7);font-size:0.88rem">Po–So: 11:00–21:00</li>
+          <li style="color:rgba(245,240,232,0.7);font-size:0.88rem">Ne: 11:00–19:00</li>
+          <li style="color:rgba(245,240,232,0.5);font-size:0.88rem;margin-top:0.75rem" data-i18n="footer.ic">IČ: 14419793</li>
+          <li style="color:rgba(245,240,232,0.5);font-size:0.88rem" data-i18n="footer.dic">DIČ: CZ14419793</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="pravni.html" data-i18n="footer.legal.privacy">Ochrana osobních údajů</a>
+        <a href="pravni.html#cookies" data-i18n="footer.legal.cookies">Cookies</a>
+        <a href="pravni.html#obchodni-podminky" data-i18n="footer.legal.terms">Obchodní podmínky</a>
+        <a href="pravni.html#impressum" data-i18n="footer.legal.impressum">Impressum</a>
+      </div>
+      <p class="footer__copy" data-i18n="footer.copyright">© 2024 Penzion Avalanche. Všechna práva vyhrazena.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     GDPR BANNER
+═══════════════════════════════════════════ -->
+<div id="gdprBanner" class="gdpr-banner">
+  <p class="gdpr-banner__text">
+    <span data-i18n="gdpr.text">Tento web používá cookies pro zajištění funkčnosti a anonymní analytiku.</span>
+    <a href="pravni.html#cookies" data-i18n="gdpr.more">Více informací o cookies</a>
+  </p>
+  <div class="gdpr-banner__actions">
+    <button id="gdprReject" class="btn btn--ghost" style="padding:0.5rem 1rem;font-size:0.82rem" data-i18n="gdpr.reject">Odmítnout</button>
+    <button id="gdprAccept" class="btn btn--gold" style="padding:0.5rem 1rem;font-size:0.82rem" data-i18n="gdpr.accept">Přijmout vše</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

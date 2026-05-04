@@ -1,0 +1,158 @@
+{
+  "title": "Penzion & Restaurace Avalanche – Železná Ruda | Špičák",
+  "description": "Ubytování a gastronomie v srdci Šumavy. 2–4-lůžkové pokoje, restaurace s českou kuchyní, vlastní parkoviště. 100 m od lanovky Pancíř.",
+  "nav": {
+    "logoTitle": "Avalanche",
+    "logoSub": "Penzion & Restaurace · Špičák",
+    "home": "Úvod",
+    "accommodation": "Ubytování",
+    "restaurant": "Restaurace",
+    "eshop": "E-shop",
+    "contact": "Kontakt",
+    "book": "Rezervovat"
+  },
+  "hero": {
+    "eyebrow": "Železná Ruda – Špičák · 847 m n. m.",
+    "title": "Ubytování a gastronomie<br>v srdci Šumavy",
+    "subtitle": "Rodinný penzion s restaurací v centru obce Špičák. Přímý přístup k turistickým trasám, lyžařským areálům a přírodě Šumavy.",
+    "badges": {
+      "rating": "⭐ 4,5/5 · 937 recenzí",
+      "parking": "🅿 Parkování zdarma",
+      "wifi": "📶 Wi-Fi zdarma",
+      "breakfast": "🥐 Snídaně v ceně",
+      "accessible": "♿ Bezbariérový přístup"
+    },
+    "bookAccommodation": "Rezervovat ubytování",
+    "viewRestaurant": "Prohlédnout restauraci",
+    "more": "Více"
+  },
+  "trust": {
+    "cableCar": "100 m od lanovky Pancíř",
+    "train": "3 min. od vlakového nádraží",
+    "bus": "Autobus 100 m",
+    "googleRating": "4,5 / 5 · Google Recenze",
+    "familyPension": "Rodinný penzion"
+  },
+  "features": {
+    "title": "Co nabízíme",
+    "subtitle": "Vše pro příjemný pobyt",
+    "description": "Penzion Avalanche poskytuje kompletní zázemí pro vaši dovolenou — od pohodlného ubytování po tradiční českou kuchyni.",
+    "accommodation": {
+      "title": "Ubytování",
+      "text": "2-, 3- a 4-lůžkové pokoje s vlastní koupelnou, Wi-Fi a televizí."
+    },
+    "restaurant": {
+      "title": "Restaurace",
+      "text": "Tradiční česká kuchyně, krbová kamna, letní terasa. Po–So 11–21 h."
+    },
+    "location": {
+      "title": "Lokalita",
+      "text": "Centrum Špičák, 847 m n. m. Blízko lanovky, lyžařských tras i přírody."
+    },
+    "parking": {
+      "title": "Parkování",
+      "text": "Vlastní parkoviště přímo u penzionu, bezplatné pro hosty."
+    }
+  },
+  "rooms": {
+    "title": "Ubytování",
+    "subtitle": "Pokoje pro každou potřebu",
+    "description": "Všechny pokoje mají vlastní sociální zařízení, Wi-Fi připojení a televizi. Snídaně je zahrnuta v ceně pobytu.",
+    "double": {
+      "type": "Pro páry",
+      "title": "Dvoulůžkový pokoj",
+      "features": [
+        "Vlastní koupelna a WC",
+        "Wi-Fi zdarma",
+        "Televize",
+        "Snídaně v ceně"
+      ],
+      "more": "Více informací"
+    },
+    "triple": {
+      "type": "Pro rodiny",
+      "title": "Třílůžkový pokoj",
+      "features": [
+        "Vlastní koupelna a WC",
+        "Wi-Fi zdarma",
+        "Televize",
+        "Snídaně v ceně"
+      ],
+      "more": "Více informací"
+    },
+    "quad": {
+      "type": "Pro skupiny",
+      "title": "Čtyřlůžkový pokoj",
+      "features": [
+        "Vlastní koupelna a WC",
+        "Wi-Fi zdarma",
+        "Televize",
+        "Úschovna lyží a kol"
+      ],
+      "more": "Více informací"
+    }
+  },
+  "process": {
+    "title": "Jak to funguje",
+    "subtitle": "Rezervace ve třech krocích",
+    "step1": {
+      "title": "Rezervace",
+      "text": "Online formulář nebo telefonicky na +420 732 888 500"
+    },
+    "step2": {
+      "title": "Potvrzení",
+      "text": "E-mailová odpověď do 24 hodin, záloha 50 %"
+    },
+    "step3": {
+      "title": "Příjezd",
+      "text": "Check-in od 14:00 · Check-out do 10:00"
+    }
+  },
+  "restaurantPreview": {
+    "label": "Restaurace Avalanche",
+    "title": "Tradiční česká kuchyně",
+    "description": "Restaurace s krbovými kamny, dřevěným interiérem a letní terasou. Nabízíme tradiční česká jídla z čerstvých surovin — pečené vepřové koleno, smažený sýr s domácí tatarkou a další oblíbené pokrmy.",
+    "hours": "Po–So: 11:00–21:00 &nbsp;·&nbsp; Ne: 11:00–19:00",
+    "menu": "Zobrazit nabídku"
+  },
+  "stats": {
+    "reviews": "Google recenzí",
+    "rating": "Průměrné hodnocení",
+    "altitude": "m n. m.",
+    "distance": "m od lanovky"
+  },
+  "cta": {
+    "label": "Rezervace",
+    "title": "Plánujete pobyt na Šumavě?",
+    "description": "Kontaktujte nás telefonicky nebo přes online formulář. Odpovíme do 24 hodin.",
+    "book": "Rezervovat ubytování"
+  },
+  "footer": {
+    "brandTitle": "Penzion Avalanche",
+    "brandSub": "Špičák · Železná Ruda",
+    "brandText": "Ubytování a gastronomie v srdci Šumavy, 847 m n. m.",
+    "navigation": "Navigace",
+    "contact": "Kontakt",
+    "openingHours": "Otevírací doba",
+    "restaurantHours": "Restaurace:",
+    "ic": "IČ: 14419793",
+    "dic": "DIČ: CZ14419793",
+    "legal": {
+      "privacy": "Ochrana osobních údajů",
+      "cookies": "Cookies",
+      "terms": "Obchodní podmínky",
+      "impressum": "Impressum"
+    },
+    "copyright": "© 2024 Penzion Avalanche. Všechna práva vyhrazena."
+  },
+  "gdpr": {
+    "text": "Tento web používá cookies pro zajištění funkčnosti a anonymní analytiku.",
+    "more": "Více informací o cookies",
+    "reject": "Odmítnout",
+    "accept": "Přijmout vše"
+  },
+  "accommodation": {
+    "title": "Ubytování – Penzion Avalanche | Špičák, Železná Ruda",
+    "description": "2-, 3- a 4-lůžkové pokoje s vlastní koupelnou, Wi-Fi a snídaní. Storno zdarma do 7 dní před příjezdem. Penzion Avalanche, Špičák 847 m n. m."
+  }
+}

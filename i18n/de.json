@@ -1,0 +1,158 @@
+{
+  "title": "Pension & Restaurant Avalanche – Železná Ruda | Špičák",
+  "description": "Unterkunft und Gastronomie im Herzen des Böhmerwaldes. 2–4-Bett-Zimmer, Restaurant mit böhmischer Küche, eigener Parkplatz. 100 m vom Sessellift Pancíř.",
+  "nav": {
+    "logoTitle": "Avalanche",
+    "logoSub": "Pension & Restaurant · Špičák",
+    "home": "Startseite",
+    "accommodation": "Unterkunft",
+    "restaurant": "Restaurant",
+    "eshop": "E-Shop",
+    "contact": "Kontakt",
+    "book": "Buchen"
+  },
+  "hero": {
+    "eyebrow": "Železná Ruda – Špičák · 847 m ü. NN",
+    "title": "Unterkunft und Gastronomie<br>im Herzen des Böhmerwaldes",
+    "subtitle": "Familienpension mit Restaurant im Ortszentrum von Špičák. Direkter Zugang zu Wanderwegen, Skigebieten und der Natur des Böhmerwaldes.",
+    "badges": {
+      "rating": "⭐ 4,5/5 · 937 Bewertungen",
+      "parking": "🅿 Kostenloser Parkplatz",
+      "wifi": "📶 Kostenloses WLAN",
+      "breakfast": "🥐 Frühstück inklusive",
+      "accessible": "♿ Barrierefreier Zugang"
+    },
+    "bookAccommodation": "Unterkunft buchen",
+    "viewRestaurant": "Restaurant ansehen",
+    "more": "Mehr erfahren"
+  },
+  "trust": {
+    "cableCar": "100 m vom Sessellift Pancíř",
+    "train": "3 Min. vom Bahnhof",
+    "bus": "Bushaltestelle 100 m",
+    "googleRating": "4,5 / 5 · Google-Bewertungen",
+    "familyPension": "Familienpension"
+  },
+  "features": {
+    "title": "Unser Angebot",
+    "subtitle": "Alles für einen angenehmen Aufenthalt",
+    "description": "Die Pension Avalanche bietet Ihnen alles, was Sie für Ihren Urlaub benötigen – von komfortablen Zimmern bis zur traditionellen böhmischen Küche.",
+    "accommodation": {
+      "title": "Unterkunft",
+      "text": "2-, 3- und 4-Bett-Zimmer mit eigenem Bad, WLAN und Fernseher."
+    },
+    "restaurant": {
+      "title": "Restaurant",
+      "text": "Traditionelle böhmische Küche, Kaminofen, Sommerterrasse. Mo–Sa 11–21 Uhr."
+    },
+    "location": {
+      "title": "Lage",
+      "text": "Ortszentrum Špičák, 847 m ü. NN. In der Nähe von Sessellift, Skipisten und Natur."
+    },
+    "parking": {
+      "title": "Parkplatz",
+      "text": "Eigener Parkplatz direkt bei der Pension, kostenlos für Gäste."
+    }
+  },
+  "rooms": {
+    "title": "Unterkunft",
+    "subtitle": "Zimmer für jeden Bedarf",
+    "description": "Alle Zimmer verfügen über ein eigenes Bad mit WC, WLAN und Fernseher. Das Frühstück ist im Übernachtungspreis inbegriffen.",
+    "double": {
+      "type": "Für Paare",
+      "title": "Doppelzimmer",
+      "features": [
+        "Eigenes Bad mit WC",
+        "Kostenloses WLAN",
+        "Fernseher",
+        "Frühstück inklusive"
+      ],
+      "more": "Mehr Informationen"
+    },
+    "triple": {
+      "type": "Für Familien",
+      "title": "Dreibettzimmer",
+      "features": [
+        "Eigenes Bad mit WC",
+        "Kostenloses WLAN",
+        "Fernseher",
+        "Frühstück inklusive"
+      ],
+      "more": "Mehr Informationen"
+    },
+    "quad": {
+      "type": "Für Gruppen",
+      "title": "Vierbettzimmer",
+      "features": [
+        "Eigenes Bad mit WC",
+        "Kostenloses WLAN",
+        "Fernseher",
+        "Ski- und Fahrradaufbewahrung"
+      ],
+      "more": "Mehr Informationen"
+    }
+  },
+  "process": {
+    "title": "So funktioniert es",
+    "subtitle": "Buchung in drei Schritten",
+    "step1": {
+      "title": "Buchung",
+      "text": "Online-Formular oder telefonisch unter +420 732 888 500"
+    },
+    "step2": {
+      "title": "Bestätigung",
+      "text": "E-Mail-Antwort innerhalb von 24 Stunden, Anzahlung 50 %"
+    },
+    "step3": {
+      "title": "Anreise",
+      "text": "Check-in ab 14:00 Uhr · Check-out bis 10:00 Uhr"
+    }
+  },
+  "restaurantPreview": {
+    "label": "Restaurant Avalanche",
+    "title": "Traditionelle böhmische Küche",
+    "description": "Restaurant mit Kaminofen, Holzinterieur und Sommerterrasse. Wir servieren traditionelle böhmische Gerichte aus frischen Zutaten – gebratene Schweinshaxe, gebackenen Käse mit hausgemachter Tatarensauce und weitere beliebte Speisen.",
+    "hours": "Mo–Sa: 11:00–21:00 &nbsp;·&nbsp; So: 11:00–19:00",
+    "menu": "Speisekarte ansehen"
+  },
+  "stats": {
+    "reviews": "Google-Bewertungen",
+    "rating": "Durchschnittsbewertung",
+    "altitude": "m ü. NN",
+    "distance": "m vom Sessellift"
+  },
+  "cta": {
+    "label": "Buchung",
+    "title": "Planen Sie einen Aufenthalt im Böhmerwald?",
+    "description": "Kontaktieren Sie uns telefonisch oder über das Online-Formular. Wir antworten innerhalb von 24 Stunden.",
+    "book": "Unterkunft buchen"
+  },
+  "footer": {
+    "brandTitle": "Pension Avalanche",
+    "brandSub": "Špičák · Železná Ruda",
+    "brandText": "Unterkunft und Gastronomie im Herzen des Böhmerwaldes, 847 m ü. NN.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "openingHours": "Öffnungszeiten",
+    "restaurantHours": "Restaurant:",
+    "ic": "IČ: 14419793",
+    "dic": "DIČ: CZ14419793",
+    "legal": {
+      "privacy": "Datenschutz",
+      "cookies": "Cookies",
+      "terms": "AGB",
+      "impressum": "Impressum"
+    },
+    "copyright": "© 2024 Pension Avalanche. Alle Rechte vorbehalten."
+  },
+  "gdpr": {
+    "text": "Diese Website verwendet Cookies zur Sicherstellung der Funktionalität und anonymen Analyse.",
+    "more": "Mehr Informationen zu Cookies",
+    "reject": "Ablehnen",
+    "accept": "Alle akzeptieren"
+  },
+  "accommodation": {
+    "title": "Unterkunft – Pension Avalanche | Špičák, Železná Ruda",
+    "description": "2-, 3- und 4-Bett-Zimmer mit eigenem Bad, WLAN und Frühstück. Kostenlose Stornierung bis 7 Tage vor Anreise. Pension Avalanche, Špičák 847 m ü. NN."
+  }
+}
